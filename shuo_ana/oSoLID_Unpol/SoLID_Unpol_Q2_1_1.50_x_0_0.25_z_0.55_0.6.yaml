@@ -1,0 +1,84 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 1.000000 < Q2 < 1.500000,0.000000 < x < 0.250000,0.550000 < z < 0.600000", titlepy: "SoLID unpol, 1.000000 < Q2 < 1.500000"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: beam, value: 11}
+      - {name: hadron, value: pi+}
+      - {name: Vs, value: 4.7}
+      - {name: Q2, low: 1, high: 1.5, integrate: true}
+      - {name: x, low: 0, high: 0.25, integrate: true}
+      - {name: z, low: 0.55, high: 0.6, integrate: true}
+    values:
+      - errors:
+          - {label: unc, value: 123.8292}
+          - {label: add, value: 0.1}
+        value: 526.75684
+      - errors:
+          - {label: unc, value: 86.18241}
+          - {label: add, value: 0.1}
+        value: 514.01841
+      - errors:
+          - {label: unc, value: 70.34632}
+          - {label: add, value: 0.1}
+        value: 494.89989
+      - errors:
+          - {label: unc, value: 60.54178}
+          - {label: add, value: 0.1}
+        value: 466.86596
+      - errors:
+          - {label: unc, value: 61.26397}
+          - {label: add, value: 0.1}
+        value: 435.42681
+      - errors:
+          - {label: unc, value: 49.62419}
+          - {label: add, value: 0.1}
+        value: 398.74233
+      - errors:
+          - {label: unc, value: 45.94873}
+          - {label: add, value: 0.1}
+        value: 354.0202
+      - errors:
+          - {label: unc, value: 45.83021}
+          - {label: add, value: 0.1}
+        value: 309.59956
+      - errors:
+          - {label: unc, value: 45.51162}
+          - {label: add, value: 0.1}
+        value: 268.41598
+      - errors:
+          - {label: unc, value: 45.46716}
+          - {label: add, value: 0.1}
+        value: 229.67964
+      - errors:
+          - {label: unc, value: 43.20656}
+          - {label: add, value: 0.1}
+        value: 191.239
+      - errors:
+          - {label: unc, value: 35.23189}
+          - {label: add, value: 0.1}
+        value: 143.21173
+      - errors:
+          - {label: unc, value: 39.05028}
+          - {label: add, value: 0.1}
+        value: 93.10079
+      - errors:
+          - {label: unc, value: 30.67007}
+          - {label: add, value: 0.1}
+        value: 37.699
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      - {value: 0.05784, factor: 22.305051}
+      - {value: 0.11976, factor: 10.77258}
+      - {value: 0.17664, factor: 7.3036918}
+      - {value: 0.23028, factor: 5.602415}
+      - {value: 0.27669, factor: 4.662706}
+      - {value: 0.32385, factor: 3.9837089}
+      - {value: 0.37677, factor: 3.4241689}
+      - {value: 0.42791, factor: 3.0149427}
+      - {value: 0.47632, factor: 2.7085239}
+      - {value: 0.52393, factor: 2.4623979}
+      - {value: 0.57513, factor: 2.243187}
+      - {value: 0.64863, factor: 1.9889985}
+      - {value: 0.74485, factor: 1.732059}
+      - {value: 0.94132, factor: 1.3705479}

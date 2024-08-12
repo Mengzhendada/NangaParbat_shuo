@@ -1,0 +1,16 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 1.000000 < Q2 < 1.500000,0.250000 < x < 0.500000,0.300000 < z < 0.350000", titlepy: "SoLID unpol, 1.000000 < Q2 < 1.500000"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: beam, value: 11}
+      - {name: hadron, value: pi+}
+      - {name: Vs, value: 4.7}
+      - {name: Q2, low: 1, high: 1.5, integrate: true}
+      - {name: x, low: 0.25, high: 0.5, integrate: true}
+      - {name: z, low: 0.3, high: 0.35, integrate: true}
+    values:
+      []
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      []
