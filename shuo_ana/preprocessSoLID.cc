@@ -1,6 +1,4 @@
 /*
- * Authors: Simone Venturini
- *          Chiara Bissolotti: chiara.bissolotti01@universitadipavia.it
  */
 
 //#include "NangaParbat/preprocessing.h"
@@ -121,7 +119,7 @@ namespace NangaParbat
 
 
     // Vector of tables to process
-    const std::vector<std::string> tables = {"numbers_x1_pip_11.txt"};
+    const std::vector<std::string> tables = {"numbers_x1_pip_11.txt","numbers_x1_pim_11.txt","numbers_x2_pip_11.txt","numbers_x2_pim_11.txt","numbers_hQ2_x2_pip_11.txt","numbers_hQ2_x2_pim_11.txt","numbers_x1_pip_11_Q22.5-3.txt"};
 
     // Output folder
     const std::string ofolder = "oSoLID_Unpol";
@@ -129,22 +127,63 @@ namespace NangaParbat
     // Vector for output names
     std::vector<std::string> filenames;
 
-    // Initialize naming map for the Q-integration ranges (the first element is for the name of the output data file)
-    const std::map<std::string, std::pair<double, double>> Q2rangelims = {{"_Q2_1_1.50", {1.0, 1.50}}, {"_Q2_1.50_2.0", {1.50, 2.0}}, {"_Q2_2.0_2.5", {2.0, 2.5}}};
-    const std::map<std::string, std::pair<double, double>> xrangelims = {{"_x_0_0.25", {0.00001, 0.25}}, {"_x_0.25_0.50", {0.250, 0.50}}};
-    const std::map<std::string, std::pair<double, double>> zrangelims = {{"_z_0.3_0.35", {0.3, 0.35}}, {"_z_0.35_0.40", {0.350, 0.40}},{"_z_0.40_0.45",{0.40,0.45}},{"_z_0.45_0.5", {0.45, 0.5}}, {"_z_0.5_0.55", {0.50, 0.55}},{"_z_0.55_0.6",{0.55,0.6}}};
-
-    // Vs ( = sqrt(2*M*E) for fixed target experiments, here E = 11 GeV)
-    const double Vs = 4.7;
-    //const double Vs = 28.635642;
-
-    // Create directory
-    std::string opath = ProcessedDataPath + "/" + ofolder;
-    mkdir(opath.c_str(), ACCESSPERMS);
-
     // Loop over tables
     for (auto const& tab : tables)
     {
+      //naming map
+      std::map<std::string, std::pair<double, double>> Q2rangelims;
+      std::map<std::string, std::pair<double, double>> xrangelims;
+      std::map<std::string, std::pair<double, double>> zrangelims;
+      
+      //std::cout<<"check names "<<tab<<std::endl;
+      // Vs ( = sqrt(2*M*E) for fixed target experiments)
+      double Vs;
+      if(tab=="numbers_x1_pip_11.txt" or tab=="numbers_x1_pim_11.txt"){
+        //std::cout<<" check condition 1"<<std::endl;
+        // Initialize naming map for the Q-integration ranges (the first element is for the name of the output data file)
+        Q2rangelims = {{"_Q2_1_1.50", {1.0, 1.50}}, {"_Q2_1.50_2.0", {1.50, 2.0}}, {"_Q2_2.0_2.5", {2.0, 2.5}}};
+        xrangelims = {{"_x_0_0.25", {0.00001, 0.25}}};
+        zrangelims = {{"_z_0.3_0.35", {0.3, 0.35}}, {"_z_0.35_0.40", {0.350, 0.40}},{"_z_0.40_0.45",{0.40,0.45}},{"_z_0.45_0.5", {0.45, 0.5}}, {"_z_0.5_0.55", {0.50, 0.55}},{"_z_0.55_0.6",{0.55,0.6}}};
+
+        // Vs ( = sqrt(2*M*E) for fixed target experiments, here E = 11 GeV)
+        Vs = 4.7;
+        //const double Vs = 28.635642;
+      }
+      else if(tab=="numbers_x2_pip_11.txt" or tab=="numbers_x2_pim_11.txt"){
+        //std::cout<<" check condition 2"<<std::endl;
+        // Initialize naming map for the Q-integration ranges (the first element is for the name of the output data file)
+        Q2rangelims = {{"_Q2_1.50_2.0", {1.50, 2.0}}, {"_Q2_2.0_2.5", {2.0, 2.5}},{"_Q2_2.5_3.0",{2.5,3.0}}};
+        xrangelims = {{"_x_0.25_0.5", {0.25, 0.5}}};
+        zrangelims = {{"_z_0.30_0.40", {0.30, 0.40}}, {"_z_0.40_0.50", {0.40, 0.50}},{"_z_0.50_0.6",{0.50,0.60}}};
+
+        // Vs ( = sqrt(2*M*E) for fixed target experiments, here E = 11 GeV)
+        Vs = 4.7;
+        //const double Vs = 28.635642;
+      }
+      else if(tab=="numbers_hQ2_x2_pip_11.txt" or tab=="numbers_hQ2_x2_pim_11.txt"){
+        //std::cout<<" check condition 3"<<std::endl;
+        // Initialize naming map for the Q-integration ranges (the first element is for the name of the output data file)
+        Q2rangelims = {{"_Q2_3.0_8.0", {3.0, 8.0}}};
+        xrangelims = {{"_x_0.25_0.70", {0.25, 0.70}}};
+        zrangelims = {{"_z_0.30_0.40", {0.30, 0.40}}, {"_z_0.40_0.60", {0.40, 0.60}}};
+
+        // Vs ( = sqrt(2*M*E) for fixed target experiments, here E = 11 GeV)
+        Vs = 4.7;
+        //const double Vs = 28.635642;
+      }
+      else if(tab=="numbers_x1_pip_11_Q22.5-3.txt"){
+        // Initialize naming map for the Q-integration ranges (the first element is for the name of the output data file)
+        Q2rangelims = {{"_Q2_2.5_3.0", {2.5, 3.0}}};
+        xrangelims = {{"_x_0_0.25", {0.0,0.25}}};
+        zrangelims = {{"_z_0.30_0.40", {0.30, 0.40}}, {"_z_0.40_0.50", {0.40, 0.50}},{"_z_0.50_0.6",{0.50,0.60}}};
+
+        // Vs ( = sqrt(2*M*E) for fixed target experiments, here E = 11 GeV)
+        Vs = 4.7;
+      }
+      // Create directory
+      std::string opath = ProcessedDataPath + "/" + ofolder;
+      mkdir(opath.c_str(), ACCESSPERMS);
+      
       // Reading table with YAML
       const YAML::Node exp = YAML::LoadFile(RawDataFolder + "/" + tab);
 
@@ -160,9 +199,9 @@ namespace NangaParbat
       if(rawfile.good())
       {
         while (std::getline(rawfile,line)){
-          // If the line starts whith #, skip it.
+          // If the line starts whith i, skip it.
           // (They are comments in the header of the rawdata file).
-          if (line[0] == '#')
+          if (line[0] == 'i')
             continue;
           rows.push_back(parseLine(line));
         }
@@ -179,8 +218,14 @@ namespace NangaParbat
         {
           for (auto const& z : zrangelims)
           {
+            //std::cout<<" check numbers"<<x.second.first<<"  "<< x.second.second <<" "<<z.second.first <<"  "<< z.second.second <<" "<< Q2.second.first <<"   "<< Q2.second.second<<std::endl;
+            int charge =0;
+            std::string name;
+            if (rows[0].had=="pi+") {charge=1;name="pip";}
+            else if (rows[0].had=="pi-") {charge=-1;name="pim";}
+            
             // File name picks up the m (i.e. Q) boundaries
-            std::string ofileQ = "SoLID_Unpol" + Q2.first + x.first + z.first;
+            std::string ofileQ = "SoLID_Unpol" + Q2.first + x.first + z.first+"_"+name;
 
             // Initialize indexes vector for future selection
             // Vector to hold the indices of the selected rows
@@ -260,7 +305,7 @@ namespace NangaParbat
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "observable" << YAML::Key << "value" << YAML::Value << "FUUT" << YAML::EndMap;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "target_isoscalarity" << YAML::Key << "value" << YAML::Value << 0 << YAML::EndMap;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "hadron" << YAML::Key << "value" << YAML::Value << "PI" << YAML::EndMap;
-            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "charge" << YAML::Key << "value" << YAML::Value << 1 << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "charge" << YAML::Key << "value" << YAML::Value << charge << YAML::EndMap;
             //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "beam" << YAML::Key << "value" << YAML::Value << rows[0].Eb << YAML::EndMap;
             //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "hadron" << YAML::Key << "value" << YAML::Value << rows[0].had << YAML::EndMap;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "prefactor" << YAML::Key << "value" << YAML::Value << 1 << YAML::EndMap;
@@ -372,29 +417,20 @@ namespace NangaParbat
         }//loop over Q2
       }//loop overr x
     }//loop over z
-        /*
-        // Map to space properly the dataset names in datasets.yaml
-        std::map<int, std::string> spaces = {{18, " "}, {17, "  "}, {16, "   "}};
+       
+    // Map to space properly the dataset names in datasets.yaml
+    std::map<int, std::string> spaces = {{51," "}, {50,"  "}, {49,"   "}, {48, "    "}, {47, "     "}, {46, "      "},{45, "       "},{44,"        "}};
 
-        // Produce outputnames to put in datasets.yaml
-        std::string outputnames;
-        for (std::string name : filenames)
-        outputnames += "  - {name: " + name + "," + spaces[name.size()] + "file: " + name + ".yaml}\n";
+    // Produce outputnames to put in datasets.yaml
+    std::string outputnames;
+    for (std::string name : filenames)
+      outputnames += "  - {name: " + name + "," + spaces[name.size()] + "file: " + name + ".yaml}\n";
 
-        return outputnames;
-        */
-        return
-          "check";
-         "  - {name: E615_Q_4.05_4.50,    file: E615_Q_4.05_4.50.yaml}\n"
-         "  - {name: E615_Q_4.50_4.95,    file: E615_Q_4.50_4.95.yaml}\n"
-         "  - {name: E615_Q_4.95_5.40,    file: E615_Q_4.95_5.40.yaml}\n"
-         "  - {name: E615_Q_5.40_5.85,    file: E615_Q_5.40_5.85.yaml}\n"
-         "  - {name: E615_Q_5.85_6.75,    file: E615_Q_5.85_6.75.yaml}\n"
-         "  - {name: E615_Q_6.75_7.65,    file: E615_Q_6.75_7.65.yaml}\n"
-         "  - {name: E615_Q_7.65_9.00,    file: E615_Q_7.65_9.00.yaml}\n"
-         "#  - {name: E615_Q_9.00_10.35,   file: E615_Q_9.00_10.35.yaml}\n"
-         "#  - {name: E615_Q_10.35_11.70,  file: E615_Q_10.35_11.70.yaml}\n"
-         "  - {name: E615_Q_11.70_13.05,  file: E615_Q_11.70_13.05.yaml}\n";
+    return outputnames;
+
+
+    //return
+    //  "check";
   }
 }
 
@@ -402,9 +438,12 @@ int main() {
   std::string raw_data_path = ".";
   std::string processed_data_path = ".";
   bool pdf_error = false;
+  // Dataset file created dunring the filtering
+  std::ofstream fout(processed_data_path + "/datasets.yaml");
 
-  std::string result = NangaParbat::PreprocessSoLID(raw_data_path, processed_data_path, pdf_error);
-  std::cout << result << std::endl;
+  fout << "SoLID:\n";
+
+  fout<< NangaParbat::PreprocessSoLID(raw_data_path, processed_data_path, pdf_error);
 
   return 0;
 }
