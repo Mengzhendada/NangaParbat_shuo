@@ -27,6 +27,7 @@ struct DataRow {
     int index;
     double Eb;
     double x, y, z, Q2, pT;
+    double xl,xr,zl,zr,Q2l,Q2r,pTl,pTr;
     double value, stat;
     std::string had;
 };
@@ -43,13 +44,16 @@ DataRow parseLine(const std::string& line) {
     std::getline(ss, item, ','); 
     row.Eb = std::stod(item);
     // Read x
-    std::getline(ss, item, ','); 
-    row.x = std::stod(item);
+    std::getline(ss, item, ',');
+    if (std::stod(item)==0) row.x=0.00001;
+    else row.x = std::stod(item);
 
 
-    // Skip the next 2 columns (xl,xr)
-    std::getline(ss, item, ','); // Skip xr
-    std::getline(ss, item, ','); // Skip xl
+    // next 2 columns (xl,xr)
+    std::getline(ss, item, ','); // xl
+    row.xl=std::stod(item);
+    std::getline(ss, item, ','); // xr
+    row.xr=std::stod(item);
 
     // Read y
     std::getline(ss, item, ',');
@@ -59,25 +63,31 @@ DataRow parseLine(const std::string& line) {
     std::getline(ss, item, ',');
     row.z = std::stod(item);
 
-    // Skip the next 2 columns (zl, zr)
-    std::getline(ss, item, ','); // Skip zl
-    std::getline(ss, item, ','); // Skip zr
+    //  next 2 columns (zl, zr)
+    std::getline(ss, item, ','); // zl
+    row.zl=std::stod(item);
+    std::getline(ss, item, ','); // zr
+    row.zr=std::stod(item);
 
     // Read Q2
     std::getline(ss, item, ',');
     row.Q2 = std::stod(item);
 
-    // Skip the next 2 columns (Q2l, Q2r)
-    std::getline(ss, item, ','); // Skip Q2l
-    std::getline(ss, item, ','); // Skip Q2r
+    // next 2 columns (Q2l, Q2r)
+    std::getline(ss, item, ','); // Q2l
+    row.Q2l=std::stod(item);
+    std::getline(ss, item, ','); // Q2r
+    row.Q2r=std::stod(item);
 
     // Read pT
     std::getline(ss, item, ','); 
     row.pT = std::stod(item);
 
-    // Skip the next 3 columns (pTl, pTr, obs)
-    std::getline(ss, item, ','); // Skip pTl
-    std::getline(ss, item, ','); // Skip pTr
+    // next 3 columns (pTl, pTr, obs)
+    std::getline(ss, item, ','); // pTl
+    row.pTl=std::stod(item);
+    std::getline(ss, item, ','); //  pTr
+    row.pTr=std::stod(item);
     std::getline(ss, item, ','); // Skip obs
 
     // Read value
@@ -121,11 +131,12 @@ namespace NangaParbat
 
     // Initialize naming map for the Q-integration ranges (the first element is for the name of the output data file)
     const std::map<std::string, std::pair<double, double>> Q2rangelims = {{"_Q2_1_1.50", {1.0, 1.50}}, {"_Q2_1.50_2.0", {1.50, 2.0}}, {"_Q2_2.0_2.5", {2.0, 2.5}}};
-    const std::map<std::string, std::pair<double, double>> xrangelims = {{"_x_0_0.25", {0, 0.25}}, {"_x_0.25_0.50", {0.250, 0.50}}};
+    const std::map<std::string, std::pair<double, double>> xrangelims = {{"_x_0_0.25", {0.00001, 0.25}}, {"_x_0.25_0.50", {0.250, 0.50}}};
     const std::map<std::string, std::pair<double, double>> zrangelims = {{"_z_0.3_0.35", {0.3, 0.35}}, {"_z_0.35_0.40", {0.350, 0.40}},{"_z_0.40_0.45",{0.40,0.45}},{"_z_0.45_0.5", {0.45, 0.5}}, {"_z_0.5_0.55", {0.50, 0.55}},{"_z_0.55_0.6",{0.55,0.6}}};
 
     // Vs ( = sqrt(2*M*E) for fixed target experiments, here E = 11 GeV)
     const double Vs = 4.7;
+    //const double Vs = 28.635642;
 
     // Create directory
     std::string opath = ProcessedDataPath + "/" + ofolder;
@@ -163,7 +174,7 @@ namespace NangaParbat
       // Loop on Q bin boundaries.
       for (auto const& Q2 : Q2rangelims)
       {
-        std::cout<<Q2.first<<"check"<<std::endl;
+        //std::cout<<Q2.first<<"check"<<std::endl;
         for (auto const& x : xrangelims)
         {
           for (auto const& z : zrangelims)
@@ -176,16 +187,16 @@ namespace NangaParbat
             std::vector<int> indexes;
             // Filter the rows based on the ranges
             for (const auto& row : rows) {
-              std::cout<<" check numbers"<<x.second.first<<" "<< row.x <<" "<< x.second.second <<" "<<z.second.first <<" "<<  row.z <<" "<< z.second.second <<" "<< Q2.second.first <<" "<< row.Q2 <<" "<< row.Q2 <<" "<< Q2.second.second<<std::endl;
+              //std::cout<<" check numbers"<<x.second.first<<" "<< row.x <<" "<< x.second.second <<" "<<z.second.first <<" "<<  row.z <<" "<< z.second.second <<" "<< Q2.second.first <<" "<< row.Q2 <<" "<< row.Q2 <<" "<< Q2.second.second<<std::endl;
               if (x.second.first < row.x && row.x < x.second.second && z.second.first < row.z && row.z < z.second.second && Q2.second.first < row.Q2 && row.Q2 < Q2.second.second) {
                 indexes.push_back(row.index);
-                std::cout<<"check index"<<row.index<<std::endl;
+                //std::cout<<"check index"<<row.index<<std::endl;
               }
             }
 
 
             // Initialize result maps
-            std::map<int, double> fdcross, fdstat, fdpT;
+            std::map<int, double> fdcross, fdstat, fdpT,fx,fy,fz,fQ2;
 
             // Prepare (outer) map for each output data file
             std::map<std::string, std::map<int, double>> filedata;
@@ -196,14 +207,20 @@ namespace NangaParbat
               fdcross[i] = rows[i].value;
               fdstat[i]  = rows[i].stat;
               fdpT[i]    = rows[i].pT;
-              std::cout<<"i "<<i<<" cross "<<fdcross[i]<<"pT"<<fdpT[i]<<std::endl;
+              fx[i]      = rows[i].x;
+              fy[i]      = rows[i].y;
+              fz[i]      = rows[i].z;
+              fQ2[i]     = rows[i].Q2;
+              //std::cout<<"check i "<<i<<" cross "<<fdcross[i]<<"pT"<<fdpT[i]<<std::endl;
             }
 
             filedata["cross"] = fdcross;
             filedata["stat"]  = fdstat;
             filedata["pT"]    = fdpT;
-
-
+            filedata["x"]    = fx;
+            filedata["y"]    = fy;
+            filedata["z"]    = fz;
+            filedata["Q2"]    = fQ2;
 
             // Plot labels
             std::map<std::string, std::string> labels
@@ -240,27 +257,31 @@ namespace NangaParbat
             emit << YAML::Key << "qualifiers" << YAML::Value;
             emit << YAML::BeginSeq;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "process" << YAML::Key << "value" << YAML::Value << "SIDIS" << YAML::EndMap;
-            //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "target" << YAML::Key << "value" << YAML::Value << 0.4025 << YAML::EndMap;
-            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "beam" << YAML::Key << "value" << YAML::Value << rows[0].Eb << YAML::EndMap;
-            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "hadron" << YAML::Key << "value" << YAML::Value << rows[0].had << YAML::EndMap;
-            //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "prefactor" << YAML::Key << "value" << YAML::Value << 1 << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "observable" << YAML::Key << "value" << YAML::Value << "FUUT" << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "target_isoscalarity" << YAML::Key << "value" << YAML::Value << 0 << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "hadron" << YAML::Key << "value" << YAML::Value << "PI" << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "charge" << YAML::Key << "value" << YAML::Value << 1 << YAML::EndMap;
+            //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "beam" << YAML::Key << "value" << YAML::Value << rows[0].Eb << YAML::EndMap;
+            //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "hadron" << YAML::Key << "value" << YAML::Value << rows[0].had << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "prefactor" << YAML::Key << "value" << YAML::Value << 1 << YAML::EndMap;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "Vs" << YAML::Key << "value" << YAML::Value << Vs << YAML::EndMap;
-            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "Q2" << YAML::Key
-              << "low" << YAML::Value << Q2.second.first << YAML::Key << "high" << YAML::Value << Q2.second.second  << YAML::Key << "integrate" << YAML::Value << "true" << YAML::EndMap;
+            //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "Q2" << YAML::Key << "low" << YAML::Value << Q2.second.first << YAML::Key << "high" << YAML::Value << Q2.second.second  << YAML::Key << "integrate" << YAML::Value << "true" << YAML::EndMap;
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "Q" << YAML::Key << "low" << YAML::Value << sqrt(Q2.second.first) << YAML::Key << "high" << YAML::Value << sqrt(Q2.second.second)  << YAML::Key << "integrate" << YAML::Value << "true" << YAML::EndMap;
             //emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "y" << YAML::Key
             //  << "low" << YAML::Value << asinh(0) << YAML::Key << "high" << YAML::Value << asinh(Vs / (2 * Q2.second.first)) << YAML::Key << "integrate" << YAML::Value << "true" << YAML::EndMap;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "x" << YAML::Key
               << "low" << YAML::Value << x.second.first << YAML::Key << "high" << YAML::Value << x.second.second  << YAML::Key << "integrate" << YAML::Value << "true" << YAML::EndMap;
             emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "z" << YAML::Key
               << "low" << YAML::Value << z.second.first << YAML::Key << "high" << YAML::Value << z.second.second  << YAML::Key << "integrate" << YAML::Value << "true" << YAML::EndMap;
-            /* emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "PS_reduction" << YAML::Key
-               << "pTmin" << YAML::Value << "###" << YAML::Key << "etamin" << YAML::Value << "###" << YAML::Key << "etamax" << YAML::Value << "###" << YAML::EndMap; */
+            emit << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "PS_reduction" << YAML::Key
+               << "W" << YAML::Value << "2.3" << YAML::Key << "ymin" << YAML::Value << "0.01" << YAML::Key << "ymax" << YAML::Value << "0.95" << YAML::EndMap; 
+               //<< "pTmin" << YAML::Value << "###" << YAML::Key << "etamin" << YAML::Value << "###" << YAML::Key << "etamax" << YAML::Value << "###" << YAML::EndMap; 
             emit << YAML::EndSeq;
             emit << YAML::Key << "values" << YAML::Value;
             emit << YAML::BeginSeq;
             for (auto const& m : filedata["cross"])
             {
-              std::cout<<"m"<<m.first<<std::endl;
+              //std::cout<<"check m"<<m.first<<std::endl;
               emit << YAML::BeginMap << YAML::Key << "errors" << YAML::Value << YAML::BeginSeq;
 
               // Oss: the conversion from cm**2 to barn is: 1b = 10**{-24}cm**2,
@@ -268,7 +289,7 @@ namespace NangaParbat
               //      <=> 1 cm**2 = 10**{36}pb
               // Remember conversion factor for the cross section
               emit << YAML::Flow << YAML::BeginMap << YAML::Key << "label" << YAML::Value << "unc" << YAML::Key << "value" << YAML::Value << (filedata["stat"][m.first])  << YAML::EndMap;
-              std::cout<<"check" <<filedata["stat"][m.first]<<std::endl;
+              //std::cout<<"check" <<filedata["stat"][m.first]<<std::endl;
 
               emit << YAML::Flow << YAML::BeginMap << YAML::Key << "label" << YAML::Value << "add" << YAML::Key << "value" << YAML::Value << 0.1 << YAML::EndMap;
               emit << YAML::EndSeq;
@@ -298,16 +319,47 @@ namespace NangaParbat
               emit << YAML::Flow << YAML::BeginMap << YAML::Key << "value" << YAML::Value << p.second << YAML::Key
                 /* Since Nangaparbat cross section is differential in qT, while this experimental set is differential in qT**2 and Q, we need to correct the value of the predictions by a factor DqT/(DQ * D(qT**2))*/
                 << "factor" << YAML::Value << 1.0 / ((2*p.second)*(sqrt((Q2.second.second - Q2.second.first)/2)/((x.second.second-x.second.first)/2)/rows[0].Eb/0.93827208816))<< YAML::EndMap;
-              std::cout<<"check p.second"<<p.second<<std::endl;
+              //std::cout<<"check p.second"<<p.second<<std::endl;
               // emit << YAML::Flow << YAML::BeginMap << YAML::Key << "value" << YAML::Value << p.second << YAML::EndMap;
             }
 
-
+            emit << YAML::EndSeq;
+            emit << YAML::EndMap;
+            emit << YAML::BeginMap;
+            emit << YAML::Key << "header" << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "x" << YAML::EndMap;
+            emit << YAML::Key << "values" << YAML::Value;
+            emit << YAML::BeginSeq;
+            for (auto const& ix : filedata["x"])
+              //std::cout<<" check x "<<ix.second<<std::endl;
+              emit << YAML::Flow << YAML::BeginMap << YAML::Key << "high" << YAML::Value << x.second.second << YAML::Key << "low" << YAML::Value << x.second.first << YAML::Key << "value" << YAML::Value << ix.second << YAML::EndMap;
+            emit << YAML::EndSeq;
+            emit << YAML::EndMap;
+            emit << YAML::BeginMap;
+            emit << YAML::Key << "header" << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "z" << YAML::EndMap;
+            emit << YAML::Key << "values" << YAML::Value;
+            emit << YAML::BeginSeq;
+            for (auto const& iz : filedata["z"])
+              emit << YAML::Flow << YAML::BeginMap << YAML::Key << "high" << YAML::Value << z.second.second << YAML::Key << "low" << YAML::Value << z.second.first << YAML::Key << "value" << YAML::Value << iz.second << YAML::EndMap;
+            emit << YAML::EndSeq;
+            emit << YAML::EndMap;
+            emit << YAML::BeginMap;
+            emit << YAML::Key << "header" << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "y" << YAML::EndMap;
+            emit << YAML::Key << "values" << YAML::Value;
+            emit << YAML::BeginSeq;
+            for (auto const& iy : filedata["y"])
+              emit << YAML::Flow << YAML::BeginMap << YAML::Key << "high" << YAML::Value << 0.95 << YAML::Key << "low" << YAML::Value << 0.01 << YAML::Key << "value" << YAML::Value << iy.second << YAML::EndMap;
+            emit << YAML::EndSeq;
+            emit << YAML::EndMap;
+            emit << YAML::BeginMap;
+            emit << YAML::Key << "header" << YAML::Flow << YAML::BeginMap << YAML::Key << "name" << YAML::Value << "Q2" << YAML::EndMap;
+            emit << YAML::Key << "values" << YAML::Value;
+            emit << YAML::BeginSeq;
+            for (auto const& iQ2 : filedata["Q2"])
+              emit << YAML::Flow << YAML::BeginMap << YAML::Key << "high" << YAML::Value << Q2.second.second << YAML::Key << "low" << YAML::Value << Q2.second.first << YAML::Key << "value" << YAML::Value << iQ2.second << YAML::EndMap;
             emit << YAML::EndSeq;
             emit << YAML::EndMap;
             emit << YAML::EndSeq;
             emit << YAML::EndMap;
-
 
             // Dump table to file
             std::ofstream fout(opath + "/" + ofileQ + ".yaml");
@@ -333,16 +385,16 @@ namespace NangaParbat
         */
         return
           "check";
-        // "  - {name: E615_Q_4.05_4.50,    file: E615_Q_4.05_4.50.yaml}\n"
-        // "  - {name: E615_Q_4.50_4.95,    file: E615_Q_4.50_4.95.yaml}\n"
-        // "  - {name: E615_Q_4.95_5.40,    file: E615_Q_4.95_5.40.yaml}\n"
-        // "  - {name: E615_Q_5.40_5.85,    file: E615_Q_5.40_5.85.yaml}\n"
-        // "  - {name: E615_Q_5.85_6.75,    file: E615_Q_5.85_6.75.yaml}\n"
-        // "  - {name: E615_Q_6.75_7.65,    file: E615_Q_6.75_7.65.yaml}\n"
-        // "  - {name: E615_Q_7.65_9.00,    file: E615_Q_7.65_9.00.yaml}\n"
-        // "#  - {name: E615_Q_9.00_10.35,   file: E615_Q_9.00_10.35.yaml}\n"
-        // "#  - {name: E615_Q_10.35_11.70,  file: E615_Q_10.35_11.70.yaml}\n"
-        // "  - {name: E615_Q_11.70_13.05,  file: E615_Q_11.70_13.05.yaml}\n";
+         "  - {name: E615_Q_4.05_4.50,    file: E615_Q_4.05_4.50.yaml}\n"
+         "  - {name: E615_Q_4.50_4.95,    file: E615_Q_4.50_4.95.yaml}\n"
+         "  - {name: E615_Q_4.95_5.40,    file: E615_Q_4.95_5.40.yaml}\n"
+         "  - {name: E615_Q_5.40_5.85,    file: E615_Q_5.40_5.85.yaml}\n"
+         "  - {name: E615_Q_5.85_6.75,    file: E615_Q_5.85_6.75.yaml}\n"
+         "  - {name: E615_Q_6.75_7.65,    file: E615_Q_6.75_7.65.yaml}\n"
+         "  - {name: E615_Q_7.65_9.00,    file: E615_Q_7.65_9.00.yaml}\n"
+         "#  - {name: E615_Q_9.00_10.35,   file: E615_Q_9.00_10.35.yaml}\n"
+         "#  - {name: E615_Q_10.35_11.70,  file: E615_Q_10.35_11.70.yaml}\n"
+         "  - {name: E615_Q_11.70_13.05,  file: E615_Q_11.70_13.05.yaml}\n";
   }
 }
 
