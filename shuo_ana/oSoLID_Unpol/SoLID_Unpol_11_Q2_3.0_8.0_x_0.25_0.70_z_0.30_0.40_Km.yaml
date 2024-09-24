@@ -1,0 +1,62 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 3.000000 < Q2 < 8.000000,0.250000 < x < 0.700000,0.300000 < z < 0.400000", titlepy: "SoLID unpol, 3.000000 < Q2 < 8.000000"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: observable, value: FUUT}
+      - {name: target_isoscalarity, value: 2/3}
+      - {name: hadron, value: KAON}
+      - {name: charge, value: -1}
+      - {name: prefactor, value: 1}
+      - {name: Vs, value: 4.7}
+      - {name: Q, low: 1.7320508, high: 2.8284271, integrate: true}
+      - {name: x, low: 0.25, high: 0.7, integrate: true}
+      - {name: z, low: 0.3, high: 0.4, integrate: true}
+      - {name: PS_reduction, W: 2.3, ymin: 0.01, ymax: 0.95}
+    values:
+      - errors:
+          - {label: unc, value: 97.73341}
+          - {label: add, value: 0.1}
+        value: 203.33551
+      - errors:
+          - {label: unc, value: 97.09692}
+          - {label: add, value: 0.1}
+        value: 138.35369
+      - errors:
+          - {label: unc, value: 140.44789}
+          - {label: add, value: 0.1}
+        value: 61.34723
+      - errors:
+          - {label: unc, value: 216.75889}
+          - {label: add, value: 0.1}
+        value: 19.87088
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      - {value: 0.12228, factor: 6.0054917}
+      - {value: 0.28969, factor: 2.5349564}
+      - {value: 0.48787, factor: 1.5052197}
+      - {value: 0.68677, factor: 1.0692831}
+  - header: {name: x}
+    values:
+      - {high: 0.7, low: 0.25, value: 0.354}
+      - {high: 0.7, low: 0.25, value: 0.351}
+      - {high: 0.7, low: 0.25, value: 0.35}
+      - {high: 0.7, low: 0.25, value: 0.327}
+  - header: {name: z}
+    values:
+      - {high: 0.4, low: 0.3, value: 0.33}
+      - {high: 0.4, low: 0.3, value: 0.331}
+      - {high: 0.4, low: 0.3, value: 0.331}
+      - {high: 0.4, low: 0.3, value: 0.333}
+  - header: {name: y}
+    values:
+      - {high: 0.95, low: 0.01, value: 0.54892}
+      - {high: 0.95, low: 0.01, value: 0.55652}
+      - {high: 0.95, low: 0.01, value: 0.55714}
+      - {high: 0.95, low: 0.01, value: 0.57516}
+  - header: {name: Q2}
+    values:
+      - {high: 8, low: 3, value: 3.9995}
+      - {high: 8, low: 3, value: 4.0032}
+      - {high: 8, low: 3, value: 4.0039}
+      - {high: 8, low: 3, value: 3.8691}

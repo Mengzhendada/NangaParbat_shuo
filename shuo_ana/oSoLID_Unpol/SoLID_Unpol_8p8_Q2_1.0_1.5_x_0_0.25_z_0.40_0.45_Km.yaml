@@ -1,0 +1,125 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 1.000000 < Q2 < 1.500000,0.000010 < x < 0.250000,0.400000 < z < 0.450000", titlepy: "SoLID unpol, 1.000000 < Q2 < 1.500000"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: observable, value: FUUT}
+      - {name: target_isoscalarity, value: 2/3}
+      - {name: hadron, value: ""}
+      - {name: charge, value: -1}
+      - {name: prefactor, value: 1}
+      - {name: Vs, value: 4.0631}
+      - {name: Q, low: 1, high: 1.2247449, integrate: true}
+      - {name: x, low: 1e-05, high: 0.25, integrate: true}
+      - {name: z, low: 0.4, high: 0.45, integrate: true}
+      - {name: PS_reduction, W: 2.3, ymin: 0.01, ymax: 0.95}
+    values:
+      - errors:
+          - {label: unc, value: 241.99152}
+          - {label: add, value: 0.1}
+        value: 2111.5884
+      - errors:
+          - {label: unc, value: 256.32191}
+          - {label: add, value: 0.1}
+        value: 1909.4797
+      - errors:
+          - {label: unc, value: 206.73295}
+          - {label: add, value: 0.1}
+        value: 1722.629
+      - errors:
+          - {label: unc, value: 181.77106}
+          - {label: add, value: 0.1}
+        value: 1520.8796
+      - errors:
+          - {label: unc, value: 190.9193}
+          - {label: add, value: 0.1}
+        value: 1334.9358
+      - errors:
+          - {label: unc, value: 175.21415}
+          - {label: add, value: 0.1}
+        value: 1155.7744
+      - errors:
+          - {label: unc, value: 183.59115}
+          - {label: add, value: 0.1}
+        value: 976.34709
+      - errors:
+          - {label: unc, value: 198.15699}
+          - {label: add, value: 0.1}
+        value: 820.29409
+      - errors:
+          - {label: unc, value: 197.50029}
+          - {label: add, value: 0.1}
+        value: 674.691
+      - errors:
+          - {label: unc, value: 216.79021}
+          - {label: add, value: 0.1}
+        value: 540.57812
+      - errors:
+          - {label: unc, value: 130.0567}
+          - {label: add, value: 0.1}
+        value: 292.98438
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      - {value: 0.06906, factor: 18.680459}
+      - {value: 0.1271, factor: 10.150059}
+      - {value: 0.17397, factor: 7.4154884}
+      - {value: 0.22667, factor: 5.6914127}
+      - {value: 0.27606, factor: 4.6731599}
+      - {value: 0.32488, factor: 3.9709201}
+      - {value: 0.37594, factor: 3.4315915}
+      - {value: 0.42379, factor: 3.0441316}
+      - {value: 0.47298, factor: 2.7275414}
+      - {value: 0.52439, factor: 2.4601394}
+      - {value: 0.65096, factor: 1.9818}
+  - header: {name: x}
+    values:
+      - {high: 0.25, low: 1e-05, value: 0.157}
+      - {high: 0.25, low: 1e-05, value: 0.148}
+      - {high: 0.25, low: 1e-05, value: 0.139}
+      - {high: 0.25, low: 1e-05, value: 0.131}
+      - {high: 0.25, low: 1e-05, value: 0.126}
+      - {high: 0.25, low: 1e-05, value: 0.123}
+      - {high: 0.25, low: 1e-05, value: 0.121}
+      - {high: 0.25, low: 1e-05, value: 0.119}
+      - {high: 0.25, low: 1e-05, value: 0.119}
+      - {high: 0.25, low: 1e-05, value: 0.119}
+      - {high: 0.25, low: 1e-05, value: 0.115}
+  - header: {name: z}
+    values:
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.425}
+      - {high: 0.45, low: 0.4, value: 0.426}
+  - header: {name: y}
+    values:
+      - {high: 0.95, low: 0.01, value: 0.47967}
+      - {high: 0.95, low: 0.01, value: 0.5147}
+      - {high: 0.95, low: 0.01, value: 0.54807}
+      - {high: 0.95, low: 0.01, value: 0.578}
+      - {high: 0.95, low: 0.01, value: 0.5982}
+      - {high: 0.95, low: 0.01, value: 0.61223}
+      - {high: 0.95, low: 0.01, value: 0.62227}
+      - {high: 0.95, low: 0.01, value: 0.6288}
+      - {high: 0.95, low: 0.01, value: 0.63075}
+      - {high: 0.95, low: 0.01, value: 0.62714}
+      - {high: 0.95, low: 0.01, value: 0.64487}
+  - header: {name: Q2}
+    values:
+      - {high: 1.5, low: 1, value: 1.2189}
+      - {high: 1.5, low: 1, value: 1.2184}
+      - {high: 1.5, low: 1, value: 1.2145}
+      - {high: 1.5, low: 1, value: 1.2075}
+      - {high: 1.5, low: 1, value: 1.2025}
+      - {high: 1.5, low: 1, value: 1.1984}
+      - {high: 1.5, low: 1, value: 1.1947}
+      - {high: 1.5, low: 1, value: 1.19}
+      - {high: 1.5, low: 1, value: 1.186}
+      - {high: 1.5, low: 1, value: 1.183}
+      - {high: 1.5, low: 1, value: 1.1908}

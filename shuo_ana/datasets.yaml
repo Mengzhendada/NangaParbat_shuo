@@ -1,62 +1,260 @@
-SoLID:
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pip,    file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pip,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pip,    file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pip,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pip,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pip,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pip,      file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pip,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pip,      file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pip,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pip,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pip,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pip,     file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pip,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pip,     file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pip,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pip,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pip,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pim,    file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pim,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pim,    file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pim,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pim,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pim,     file: SoLID_Unpol_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pim,      file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pim,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pim,      file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pim,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pim,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pim,       file: SoLID_Unpol_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pim,     file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pim,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pim,     file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pim,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pim,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pim,      file: SoLID_Unpol_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pip,  file: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pip,  file: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pip,   file: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pip,   file: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pip,   file: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pip,    file: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pip,   file: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pip,   file: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pip,    file: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pip.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pim,  file: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pim,  file: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pim.yaml}
-  - {name: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pim,   file: SoLID_Unpol_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pim,   file: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pim,   file: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pim,    file: SoLID_Unpol_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pim,   file: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pim,   file: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pim,    file: SoLID_Unpol_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pim.yaml}
-  - {name: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pip,  file: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pip,  file: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pip.yaml}
-  - {name: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pim,  file: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pim.yaml}
-  - {name: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pim,  file: SoLID_Unpol_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pim.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_pip,     file: SoLID_Unpol_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_pip,     file: SoLID_Unpol_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_pip.yaml}
-  - {name: SoLID_Unpol_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_pip,      file: SoLID_Unpol_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_pip.yaml}
+#SoLID 11GeV Pion:
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pip, file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pip,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pip, file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pip,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pip,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pip,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pip,   file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pip,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pip,   file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pip,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pip,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pip,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pip,  file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pip,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pip,  file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pip,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pip,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pip,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pim, file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pim,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pim, file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pim,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pim,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pim,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pim,   file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pim,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pim,   file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pim,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pim,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pim,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pim,  file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pim,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pim,  file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pim,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pim,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pim,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pip,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pip,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pip,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pip,file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pip,file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pip, file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pip,file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pip,file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pip, file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pim,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pim,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pim,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pim,file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pim,file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pim, file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pim,file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pim,file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pim, file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pip,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pip,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pim,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pim,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_pip,  file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_pip,  file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_pip,   file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_pip.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_pim,  file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_pim,  file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_pim.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_pim,   file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_pim.yaml}
+#SoLID 8.8GeV Pion:
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_pip, file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_pip,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_pip, file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_pip,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_pip,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_pip,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.35_0.40_pip,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.35_pip,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.40_0.45_pip,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.45_0.5_pip,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.55_0.6_pip,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.5_0.55_pip,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.4_pim,     file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.4_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.4_0.60_pim,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.4_0.60_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_pim,     file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_pim,    file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_pip, file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_pip,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_pip, file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_pip,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_pip,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_pip,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_pip, file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_pip,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_pip, file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_pip,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_pip,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_pip,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_pip, file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_pip,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_pip, file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_pip,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_pip,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_pip,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_pim, file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_pim,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_pim, file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_pim,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_pim,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_pim,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_pim, file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_pim,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_pim, file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_pim,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_pim,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_pim,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_pim, file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_pim,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_pim, file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_pim,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_pim,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_pim,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_pip,     file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_pip,    file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_pim,     file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_pim,    file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_pip,     file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_pip,    file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_pip.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_pim, file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_pim,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_pim, file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_pim,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_pim,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_pim.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_pim,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_pim.yaml}
+#SoLID 11GeV Kaon:
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_Kp,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_Kp,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_Kp,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_Kp,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_Kp,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_Kp,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_Kp,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_Kp,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_Kp,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_Kp,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_Kp,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_Kp,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_Kp,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_Kp,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_Kp,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_Kp,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_Kp,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_Kp,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_Km,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_Km,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_Km,  file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_Km,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_Km,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_Km,   file: SoLID_Unpol_11_Q2_1.50_2.0_x_0_0.25_z_0.5_0.55_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_Km,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_Km,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_Km,    file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_Km,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_Km,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_Km,     file: SoLID_Unpol_11_Q2_1_1.50_x_0_0.25_z_0.5_0.55_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_Km,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_Km,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_Km,   file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_Km,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_Km,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_Km,    file: SoLID_Unpol_11_Q2_2.0_2.5_x_0_0.25_z_0.5_0.55_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_Kp,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_Kp,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_Kp, file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_Kp, file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_Kp, file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_Kp,  file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_Kp, file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_Kp, file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_Kp,  file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_Km,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.30_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_Km,file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.40_0.50_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_Km, file: SoLID_Unpol_11_Q2_1.50_2.0_x_0.25_0.5_z_0.50_0.6_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_Km, file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.30_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_Km, file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.40_0.50_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_Km,  file: SoLID_Unpol_11_Q2_2.0_2.5_x_0.25_0.5_z_0.50_0.6_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_Km, file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.30_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_Km, file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.40_0.50_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_Km,  file: SoLID_Unpol_11_Q2_2.5_3.0_x_0.25_0.5_z_0.50_0.6_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_Kp,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_Kp,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_Km,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.30_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_Km,file: SoLID_Unpol_11_Q2_3.0_8.0_x_0.25_0.70_z_0.40_0.60_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_Kp,   file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_Kp,   file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_Kp,    file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_Km,   file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.30_0.40_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_Km,   file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.40_0.50_Km.yaml}
+  - {name: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_Km,    file: SoLID_Unpol_11_Q2_2.5_3.0_x_0_0.25_z_0.50_0.6_Km.yaml}
+#SoLID 8.8GeV Kaon:
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_Kp,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_Kp,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_Kp,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_Kp,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_Kp,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_Kp,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.35_0.40_Kp,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.35_Kp,     file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.40_0.45_Kp,    file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.45_0.5_Kp,     file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.55_0.6_Kp,     file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.5_0.55_Kp,     file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.4_Km,      file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.3_0.4_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.4_0.60_Km,     file: SoLID_Unpol_8p8_Q2_1.5_2_x_0_0.25_z_0.4_0.60_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_Km,      file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_Km,     file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_Kp,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_Kp,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_Kp,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_Kp,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_Kp,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_Kp,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_Kp,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_Kp,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_Kp,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_Kp,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_Kp,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_Kp,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_Kp,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_Kp,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_Kp,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_Kp,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_Kp,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_Kp,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_Km,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_Km,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_Km,  file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_Km,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_Km,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_Km,   file: SoLID_Unpol_8p8_Q2_1.5_2_x_0.25_0.5_z_0.5_0.55_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_Km,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_Km,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_Km,  file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_Km,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_Km,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_Km,   file: SoLID_Unpol_8p8_Q2_2.5-3_x_0.25_0.5_z_0.5_0.55_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_Km,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_Km,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_Km,  file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_Km,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_Km,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_Km,   file: SoLID_Unpol_8p8_Q2_2_2.5_x_0.25_0.5_z_0.5_0.55_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_Kp,      file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_Kp,     file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_Km,      file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.3_0.4_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_Km,     file: SoLID_Unpol_8p8_Q2_3_8_x_0.25_0.7_z_0.4_0.60_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_Kp,      file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.3_0.4_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_Kp,     file: SoLID_Unpol_8p8_Q2_2_2.5_x_0_0.25_z_0.4_0.60_Kp.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_Km,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.35_0.40_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_Km,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.3_0.35_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_Km,  file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.40_0.45_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_Km,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.45_0.5_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_Km,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.55_0.6_Km.yaml}
+  - {name: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_Km,   file: SoLID_Unpol_8p8_Q2_1.0_1.5_x_0_0.25_z_0.5_0.55_Km.yaml}

@@ -1,0 +1,44 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 1.500000 < Q2 < 2.000000,0.250000 < x < 0.500000,0.550000 < z < 0.600000", titlepy: "SoLID unpol, 1.500000 < Q2 < 2.000000"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: observable, value: FUUT}
+      - {name: target_isoscalarity, value: 2/3}
+      - {name: hadron, value: PI}
+      - {name: charge, value: -1}
+      - {name: prefactor, value: 1}
+      - {name: Vs, value: 4.0631}
+      - {name: Q, low: 1.2247449, high: 1.4142136, integrate: true}
+      - {name: x, low: 0.25, high: 0.5, integrate: true}
+      - {name: z, low: 0.55, high: 0.6, integrate: true}
+      - {name: PS_reduction, W: 2.3, ymin: 0.01, ymax: 0.95}
+    values:
+      - errors:
+          - {label: unc, value: 123.0504}
+          - {label: add, value: 0.1}
+        value: 454.15829
+      - errors:
+          - {label: unc, value: 295.1652}
+          - {label: add, value: 0.1}
+        value: 264.35939
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      - {value: 0.21197, factor: 6.0863524}
+      - {value: 0.44163, factor: 2.9212783}
+  - header: {name: x}
+    values:
+      - {high: 0.5, low: 0.25, value: 0.267}
+      - {high: 0.5, low: 0.25, value: 0.262}
+  - header: {name: z}
+    values:
+      - {high: 0.6, low: 0.55, value: 0.573}
+      - {high: 0.6, low: 0.55, value: 0.57}
+  - header: {name: y}
+    values:
+      - {high: 0.95, low: 0.01, value: 0.41089}
+      - {high: 0.95, low: 0.01, value: 0.43196}
+  - header: {name: Q2}
+    values:
+      - {high: 2, low: 1.5, value: 1.8121}
+      - {high: 2, low: 1.5, value: 1.8681}
