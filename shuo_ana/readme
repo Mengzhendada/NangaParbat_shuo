@@ -1,0 +1,7 @@
+SoLID projection text files are in SoLID_Unol
+
+out texts are in oSoLID_Unpol
+
+the files summarized in datasets.yaml
+
+g++ preprocessSoLID.cc -o SoLID -I/var/phy/project/mepg/shuoj/apps/yaml-cpp/install/include -L/var/phy/project/mepg/shuoj/apps/yaml-cpp/install/lib64 -lyaml-cpp

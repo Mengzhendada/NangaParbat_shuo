@@ -274,8 +274,8 @@ namespace NangaParbat
               //{"xlabel", "#it{q}_{T} [GeV]"},
               //{"ylabel", "#frac{d^2#it{#sigma}}{d#it{Q}#d#it{q}_{T}} [pb GeV^{-2}]"},
               {"title", "SoLID, 3He target " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)+","+ std::to_string(x.second.first) + " < x < " + std::to_string(x.second.second)+","+std::to_string(z.second.first) + " < z < " + std::to_string(z.second.second)},
-                //{"xlabelpy", "$q_T \\rm{[GeV]}$"},
-                //{"ylabelpy", "$\\frac{d^2\\sigma}{dQ dq_{T}}[\\rm{pb GeV}^{-2}]$"},
+                {"xlabelpy", "$P_{hT} \\rm{[GeV]}$"},
+                {"ylabelpy", "$F^{\\pi^"+std::string(1,rows[0].had[2])+"}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"},
                 {"titlepy", "SoLID unpol, " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)}
             };
 
@@ -601,8 +601,8 @@ namespace NangaParbat
               //{"xlabel", "#it{q}_{T} [GeV]"},
               //{"ylabel", "#frac{d^2#it{#sigma}}{d#it{Q}#d#it{q}_{T}} [pb GeV^{-2}]"},
               {"title", "SoLID, 3He target " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)+","+ std::to_string(x.second.first) + " < x < " + std::to_string(x.second.second)+","+std::to_string(z.second.first) + " < z < " + std::to_string(z.second.second)},
-                //{"xlabelpy", "$q_T \\rm{[GeV]}$"},
-                //{"ylabelpy", "$\\frac{d^2\\sigma}{dQ dq_{T}}[\\rm{pb GeV}^{-2}]$"},
+                {"xlabelpy", "$P_{hT} \\rm{[GeV]}$"},
+                {"ylabelpy", "$F^{K^"+std::string(1,rows[0].had[1])+"}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"},
                 {"titlepy", "SoLID unpol, " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)}
             };
 
@@ -928,8 +928,8 @@ namespace NangaParbat
               //{"xlabel", "#it{q}_{T} [GeV]"},
               //{"ylabel", "#frac{d^2#it{#sigma}}{d#it{Q}#d#it{q}_{T}} [pb GeV^{-2}]"},
               {"title", "SoLID, 3He target " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)+","+ std::to_string(x.second.first) + " < x < " + std::to_string(x.second.second)+","+std::to_string(z.second.first) + " < z < " + std::to_string(z.second.second)},
-                //{"xlabelpy", "$q_T \\rm{[GeV]}$"},
-                //{"ylabelpy", "$\\frac{d^2\\sigma}{dQ dq_{T}}[\\rm{pb GeV}^{-2}]$"},
+                {"xlabelpy", "$P_{hT} \\rm{[GeV]}$"},
+                {"ylabelpy", "$F^{\\pi^"+std::string(1,rows[0].had[2])+"}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"},
                 {"titlepy", "SoLID unpol, " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)}
             };
 
@@ -1255,6 +1255,8 @@ namespace NangaParbat
               //{"xlabel", "#it{q}_{T} [GeV]"},
               //{"ylabel", "#frac{d^2#it{#sigma}}{d#it{Q}#d#it{q}_{T}} [pb GeV^{-2}]"},
               {"title", "SoLID, 3He target " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)+","+ std::to_string(x.second.first) + " < x < " + std::to_string(x.second.second)+","+std::to_string(z.second.first) + " < z < " + std::to_string(z.second.second)},
+                {"xlabelpy", "$P_{hT} \\rm{[GeV]}$"},
+                {"ylabelpy", "$F^{K^"+std::string(1,rows[0].had[1])+"}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"},
                 //{"xlabelpy", "$q_T \\rm{[GeV]}$"},
                 //{"ylabelpy", "$\\frac{d^2\\sigma}{dQ dq_{T}}[\\rm{pb GeV}^{-2}]$"},
                 {"titlepy", "SoLID unpol, " + std::to_string(Q2.second.first) + " < Q2 < " + std::to_string(Q2.second.second)}

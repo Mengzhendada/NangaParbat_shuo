@@ -1,5 +1,5 @@
 dependent_variables:
-  - header: {title: "SoLID, 3He target 1.000000 < Q2 < 1.500000,0.000010 < x < 0.250000,0.400000 < z < 0.450000", titlepy: "SoLID unpol, 1.000000 < Q2 < 1.500000"}
+  - header: {title: "SoLID, 3He target 1.000000 < Q2 < 1.500000,0.000010 < x < 0.250000,0.400000 < z < 0.450000", titlepy: "SoLID unpol, 1.000000 < Q2 < 1.500000", xlabelpy: "$P_{hT} \\rm{[GeV]}$", ylabelpy: "$F^{K^-}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"}
     qualifiers:
       - {name: process, value: SIDIS}
       - {name: observable, value: FUUT}
