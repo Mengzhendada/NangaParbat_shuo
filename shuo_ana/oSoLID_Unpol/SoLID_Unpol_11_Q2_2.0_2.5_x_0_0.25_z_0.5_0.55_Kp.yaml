@@ -3,8 +3,8 @@ dependent_variables:
     qualifiers:
       - {name: process, value: SIDIS}
       - {name: observable, value: FUUT}
-      - {name: target_isoscalarity, value: 2/3}
-      - {name: hadron, value: KAON}
+      - {name: target_isoscalarity, value: 0.6667}
+      - {name: hadron, value: KA}
       - {name: charge, value: 1}
       - {name: prefactor, value: 1}
       - {name: Vs, value: 4.7}
