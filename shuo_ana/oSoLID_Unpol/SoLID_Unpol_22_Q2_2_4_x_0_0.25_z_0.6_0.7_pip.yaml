@@ -1,0 +1,53 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 2.000000 < Q2 < 4.000000,0.000010 < x < 0.250000,0.600000 < z < 0.700000", titlepy: "SoLID unpol, 2.000000 < Q2 < 4.000000", xlabelpy: "$P_{hT} \\rm{[GeV]}$", ylabelpy: "$F^{\\pi^+}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: observable, value: FUUT}
+      - {name: target_isoscalarity, value: 0.6667}
+      - {name: hadron, value: PI}
+      - {name: charge, value: 1}
+      - {name: prefactor, value: 1}
+      - {name: Vs, value: 6.424}
+      - {name: Q, low: 1.4142136, high: 2, integrate: true}
+      - {name: x, low: 1e-05, high: 0.25, integrate: true}
+      - {name: z, low: 0.6, high: 0.7, integrate: true}
+      - {name: PS_reduction, W: 2.3, ymin: 0.01, ymax: 0.95}
+    values:
+      - errors:
+          - {label: unc, value: 164.7162}
+          - {label: add, value: 0.1}
+        value: 83.88746
+      - errors:
+          - {label: unc, value: 170.9466}
+          - {label: add, value: 0.1}
+        value: 44.70992
+      - errors:
+          - {label: unc, value: 79.97369}
+          - {label: add, value: 0.1}
+        value: 12.58689
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      - {value: 0.62918, factor: 2.0504029}
+      - {value: 0.79929, factor: 1.6140231}
+      - {value: 1.12688, factor: 1.144818}
+  - header: {name: x}
+    values:
+      - {high: 0.25, low: 1e-05, value: 0.145}
+      - {high: 0.25, low: 1e-05, value: 0.135}
+      - {high: 0.25, low: 1e-05, value: 0.116}
+  - header: {name: z}
+    values:
+      - {high: 0.7, low: 0.6, value: 0.64}
+      - {high: 0.7, low: 0.6, value: 0.642}
+      - {high: 0.7, low: 0.6, value: 0.646}
+  - header: {name: y}
+    values:
+      - {high: 0.95, low: 0.01, value: 0.62967}
+      - {high: 0.95, low: 0.01, value: 0.65731}
+      - {high: 0.95, low: 0.01, value: 0.71165}
+  - header: {name: Q2}
+    values:
+      - {high: 4, low: 2, value: 3.7623}
+      - {high: 4, low: 2, value: 3.6341}
+      - {high: 4, low: 2, value: 3.3486}

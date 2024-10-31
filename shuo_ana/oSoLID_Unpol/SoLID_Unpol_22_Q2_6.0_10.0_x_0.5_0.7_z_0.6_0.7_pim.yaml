@@ -1,0 +1,53 @@
+dependent_variables:
+  - header: {title: "SoLID, 3He target 6.000000 < Q2 < 10.000000,0.500000 < x < 0.700000,0.600000 < z < 0.700000", titlepy: "SoLID unpol, 6.000000 < Q2 < 10.000000", xlabelpy: "$P_{hT} \\rm{[GeV]}$", ylabelpy: "$F^{\\pi^-}_{\\rm UU,T }\\left(x, z, q_T, Q^2 \\right)$"}
+    qualifiers:
+      - {name: process, value: SIDIS}
+      - {name: observable, value: FUUT}
+      - {name: target_isoscalarity, value: 0.6667}
+      - {name: hadron, value: PI}
+      - {name: charge, value: -1}
+      - {name: prefactor, value: 1}
+      - {name: Vs, value: 6.424}
+      - {name: Q, low: 2.4494897, high: 3.1622777, integrate: true}
+      - {name: x, low: 0.5, high: 0.7, integrate: true}
+      - {name: z, low: 0.6, high: 0.7, integrate: true}
+      - {name: PS_reduction, W: 2.3, ymin: 0.01, ymax: 0.95}
+    values:
+      - errors:
+          - {label: unc, value: 224.6838}
+          - {label: add, value: 0.1}
+        value: 5.61486
+      - errors:
+          - {label: unc, value: 222.3474}
+          - {label: add, value: 0.1}
+        value: 4.12189
+      - errors:
+          - {label: unc, value: 368.3724}
+          - {label: add, value: 0.1}
+        value: 2.11418
+independent_variables:
+  - header: {name: PT, units: GEV}
+    values:
+      - {value: 0.20812, factor: 3.506652}
+      - {value: 0.42314, factor: 1.7247351}
+      - {value: 0.64199, factor: 1.1367847}
+  - header: {name: x}
+    values:
+      - {high: 0.7, low: 0.5, value: 0.534}
+      - {high: 0.7, low: 0.5, value: 0.533}
+      - {high: 0.7, low: 0.5, value: 0.525}
+  - header: {name: z}
+    values:
+      - {high: 0.7, low: 0.6, value: 0.641}
+      - {high: 0.7, low: 0.6, value: 0.639}
+      - {high: 0.7, low: 0.6, value: 0.635}
+  - header: {name: y}
+    values:
+      - {high: 0.95, low: 0.01, value: 0.39114}
+      - {high: 0.95, low: 0.01, value: 0.38675}
+      - {high: 0.95, low: 0.01, value: 0.40624}
+  - header: {name: Q2}
+    values:
+      - {high: 10, low: 6, value: 8.6162}
+      - {high: 10, low: 6, value: 8.5025}
+      - {high: 10, low: 6, value: 8.7994}
