@@ -226,7 +226,7 @@ namespace NangaParbat
             else if (rows[0].had=="pi-") {charge=-1;name="pim";}
             
             // File name picks up the m (i.e. Q) boundaries
-            std::string ofileQ = "SoLID_Unpol" + Q2.first + x.first + z.first+"_noSys_"+name;
+            std::string ofileQ = "SoLID_Unpol" + Q2.first + x.first + z.first+"_"+name;
 
             // Initialize indexes vector for future selection
             // Vector to hold the indices of the selected rows
@@ -1847,7 +1847,7 @@ namespace NangaParbat
             else if (rows[0].had=="pi-") {charge=-1;name="pim";}
             
             // File name picks up the m (i.e. Q) boundaries
-            std::string ofileQ = "SoLID_Unpol" + Q2.first + x.first + z.first+"_"+name;
+            std::string ofileQ = "SoLID_Unpol" + Q2.first + x.first + z.first+"_noSys_"+name;
 
             // Initialize indexes vector for future selection
             // Vector to hold the indices of the selected rows
@@ -2085,7 +2085,7 @@ int main() {
   
   fout << "#SoLID 22GeV Pion without sys:\n";
 
-  fout<< NangaParbat::PreprocessSoLID_22(raw_data_path, processed_data_path);
+  fout<< NangaParbat::PreprocessSoLID_22_nosys(raw_data_path, processed_data_path);
 
   return 0;
 }
